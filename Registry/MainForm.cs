@@ -41,7 +41,7 @@ namespace Registry
 
                     //见RegistryShape那个图片，left,top是P1的位置。P6的X是根号三/2，Y则是P1到P6长度的Sin30°对应值，就是0.5。
                     //所以有可能是负数，那么就把top加一下。
-                    if (top - 0.5f * len < 0.0f) top += 0.5f * len;
+                    if (top - 0.5f * len < 0.0f) top += 0.5f * len; 
                     
 
                     int colnum = (int)((this.Width - left) / (SQRT3 * len))-1;
